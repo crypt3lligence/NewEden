@@ -1,0 +1,192 @@
+<!DOCTYPE html> <!-- not a place for hidden GEMS / crypt3lligence -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Eden Labs</title>
+    <link rel="stylesheet" href="styles/NEgeneral.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="scripts/NEscripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Media\Header\main-logo.png" alt="Logo">
+      </div>
+      <nav class="navbar">
+        <div class="navbar-content"></div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="social-media">
+        <a href="#"><img src="Media\Header\Instagram-logo.png" alt="Instagram"></a>
+        <a class="twitterX-logo" href="#"><img src="Media\Header\TwitterX-logo.png" alt="Twitter"></a>
+      </div>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="mobile-menu">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+        <div class="dropdown">
+            <a href="#">SOCIAL ▼</a>
+            <div class="dropdown-content">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">TWITTER</a>
+            </div>
+        </div>
+        <img class="menu-icon" src="Media/Design Elements/NE-logo-class.png" alt="Mini Logo">
+      </div>
+    </header>
+    <main class="hidden">
+      <div class="main-page-container">
+        <img class="main-desktop-image" src="Media/Main/Images/open-door-wide-2.jpg">
+        <img class="main-mobile-image" src="Media/Main/Images/open-door-2.jpg">
+        <video class="main-video" autoplay loop muted playsinline>
+          <source src="Media/Video/NE-logo-animation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <div id="app" v-cloak>
+        <div class="container"> 
+          <div class="main-content"> 
+            <div class="inner-content"> 
+              <div class="nav-section"> 
+                <p class="nav-title">CORE CHARACTERS</p>
+                <div class="button-nav">
+                  <button v-for="character in characters" @click="selectCharacter(character)" :class="{ active: character === selectedCharacter }">
+                    <img v-if="character === selectedCharacter" src="Design\Asset 4.png" alt="active icon" class="active-icon">
+                    {{ character.name }}
+                  </button>
+                </div>
+              </div>
+              <div class="middle-section">
+                <div v-if="selectedCharacter" class="background" :style="{ backgroundImage: `url(${selectedCharacter.backImage})` }"></div>
+                <transition v-if="selectedCharacter" name="slide-fade">
+                  <img class="main-character" :src="selectedCharacter.characterImage" :key="selectedCharacter.characterImage" alt="character image">
+                </transition>
+              </div>
+              <div v-if="selectedCharacter" class="right-section"> 
+                <div class="character-stats">
+                  <img :src="selectedCharacter.icon" alt="character icon" class="character-icon">
+                  <h2 class="character-class">{{ selectedCharacter.className }}</h2>
+                  <p class="character-description">{{ selectedCharacter.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+      <div class="carousel">
+        <div class="slide">
+          <img class="icon" src="Media\Main\Classes\MS-symbol-white.png" alt="Icon 1">
+          <div class="character-container">
+            <img class="character" src="Media\Main\Characters\Couple-lq.png" alt="Character 1">
+          </div>
+          <p class="class-name">METASURFER</p>
+        </div>
+        <div class="slide">
+          <img class="icon" src="Media\Main\Classes\AN-symbol-white.png" alt="Icon 1">
+          <div class="character-container">
+            <img class="character" src="Media\Main\Characters\HAndroid-lq.png" alt="Character 1">
+          </div>
+          <p class="class-name">ANDROID</p>
+        </div>
+        <div class="slide">
+          <img class="icon" src="Media\Main\Classes\AL-symbol-white.png" alt="Icon 1">
+          <div class="character-container">
+            <img class="character" src="Media\Main\Characters\Hatto-lq.png" alt="Character 1">
+          </div>
+          <p class="class-name">ALPHA</p>
+        </div>
+        <div class="slide">
+          <img class="icon" src="Media\Main\Classes\CR-symbol-white.png" alt="Icon 1">
+          <div class="character-container">
+            <img class="character" src="Media\Main\Characters\Headmaster-lq.png" alt="Character 1">
+          </div>
+          <p class="class-name">CRYPTIC</p>
+        </div>
+        <div class="slide">
+          <img class="icon" src="Media\Main\Classes\DV-symbol-white.png" alt="Icon 1">
+          <div class="character-container">
+            <img class="character" src="Media\Main\Characters\DSolo-lq.png" alt="Character 1">
+          </div>
+          <p class="class-name">DEV</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img class="footer-logo" src="Media/Design Elements/NE-logo-mini-b-w-border.png">
+      <p>New Eden Labs [2023]</p>
+    </footer>
+
+    
+    <script>      
+    document.addEventListener("DOMContentLoaded", function() {
+      const mainElement = document.querySelector("main");
+      if (mainElement) {
+        mainElement.classList.remove("hidden");
+      }
+    });
+    </script>
+    
+    <script type="module">
+      import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+    
+      createApp({
+        data() {
+          return {
+            characters: [
+            { 
+                name: 'SERGE', 
+                characterImage: '/Media/Main/serge-aggro.png', 
+                icon: '/Media/Main/serge-avatar.png',
+                backImage: '/Media/main/classes/AL-symbol-white.png',
+                className: 'ALPHA',
+                description: 'As an Alpha class, Serge is not only an adept warrior, but is also an elite commander with unmatched tactical experience.' 
+              },  
+              { 
+                name: 'DR.SOLO', 
+                characterImage: '/Media/Main/drsolo-aggro.png', 
+                icon: '/Media/Main/drsolo-avatar.png',
+                backImage: '/Media/main/classes/DV-symbol-white.png',
+                className: 'DEV',
+                description: 'xxxxx xxxxx xxxxxx xxxxxxxx xxxxx xxx xxxx xxxxx xxxx xxxx xxxx xxxxxx xxx xxx xxxxxx xxxxxxx xxxx xxxx xxxxx xxxx' 
+              },
+              { 
+                name: 'VOLTRIX', 
+                characterImage: '/Media/Main/voltrix-aggro.png', 
+                icon: '/Media/Main/voltrix-avatar.png',
+                backImage: '/Media/main/classes/AN-symbol-white.png',
+                className: 'ANDROID',
+                description: 'xxxxx xxxxx xxxxxx xxxxxxxx xxxxx xxx xxxx xxxxx xxxx xxxx xxxx xxxxxx xxx xxx xxxxxx xxxxxxx xxxx xxxx xxxxx xxxx' 
+              },
+              
+            ],
+            selectedCharacter: null
+          };
+        },
+        methods: {
+          selectCharacter(character) {
+            this.selectedCharacter = character;
+          }
+        },
+        mounted() {
+          this.selectedCharacter = this.characters[0]; 
+        }
+      }).mount('#app');
+
+
+    </script>
+  </body> 
+</html>
