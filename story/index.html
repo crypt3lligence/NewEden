@@ -154,21 +154,14 @@
 
       document.addEventListener("DOMContentLoaded", function() {
         const mainElement = document.querySelector("main");
-        if (mainElement) {
-          mainElement.classList.remove("hidden");
-        }
-      });
+        const footerElement = document.querySelector("footer");
 
-      window.addEventListener("load", function() {
-        const footerElement = document.querySelector('footer');
-        const mainElement = document.querySelector('main');
+        if (mainElement) {
+            mainElement.classList.add("loaded");
+        }
 
         if (footerElement) {
-          footerElement.classList.add('loaded');
-        }
-
-        if (mainElement) {
-          mainElement.classList.add('loaded');
+            footerElement.classList.add("loaded");
         }
       });
     </script>
