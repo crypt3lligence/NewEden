@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Eden Labs</title>
-    <link rel="stylesheet" href="styles/NEgeneralTest.css">
+    <link rel="stylesheet" href="/styles/NEgeneralTest.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts/NEMediascriptsTest.js"></script>
+    <script src="/scripts/NEMediascriptsTest.js"></script>
   </head>
   <body>
     <header>
@@ -18,8 +18,8 @@
         <a href="/">HOME</a>
         <a href="#">ABOUT</a>
         <a href="/story/">STORY</a>
-        <a class="nav-social-icon" href="#"><img src="Media\Header\Instagram-logo.png" alt="Instagram"></a>
-        <a class="nav-social-icon" href="#"><img src="Media\Header\TwitterX-logo.png" alt="Twitter"></a>
+        <a class="nav-social-icon" href="#"><img src="/Media/Header/Instagram-logo.png" alt="Instagram"></a>
+        <a class="nav-social-icon" href="#"><img src="/Media/Header/TwitterX-logo.png" alt="Twitter"></a>
       </nav>
       <div class="hamburger">
         <div></div>
@@ -37,7 +37,7 @@
                 <a href="#">TWITTER</a>
             </div>
         </div>
-        <img class="menu-icon" src="Media/Design Elements/NE-logo-class.png" alt="Mini Logo">
+        <img class="menu-icon" src="/Media/Design Elements/NE-logo-class.png" alt="Mini Logo">
       </div>
     </header>
 
@@ -47,8 +47,8 @@
           <div class="story-main-wrap"> 
             <div class="story-main-content">
               <div class="story-main-image">
-                <img class="story-main-image-dt" src="Media/Main/Story/new-eden-city-concept.png">
-                <img class="story-main-image-mb" src="Media/Main/Story/ne-concept-mob.jpg">
+                <img class="story-main-image-dt" src="/Media/Main/Story/new-eden-city-concept.png">
+                <img class="story-main-image-mb" src="/Media/Main/Story/ne-concept-mob.jpg">
               </div>
               <div class="story-main-info">
                 <p class="story-page-title">STORY ///</p>
@@ -69,11 +69,11 @@
           <div class="story-character-wrap"> 
             <div class="story-character-content">
               <div class="story-character-image">
-                <img src="Media/Main/Story/celine-ne-street.png">
+                <img src="/Media/Main/Story/celine-ne-street.png">
               </div>
               <div class="story-character-info">
                 <div class="story-character-content-wrap">
-                  <img class="story-character-icon" src="Media/Main/Slider-Icons/msurfer-slider-icon.png">
+                  <img class="story-character-icon" src="/Media/Main/Slider-Icons/msurfer-slider-icon.png">
                   <p class="story-character-title">CELINE</p>
                   <p class="story-character-text">A.k.a “code: 0xymoron” (in the more hidden corners of the Cyberverse), Celine is a Metasurfer – a class of augmented humans known for their advanced abilities in integrating and traversing the virtual systems.</p>
                   <p class="story-character-text">Frequently diving into the depths of the Cyberverse void, she’s an adept hacker and a street-smart Edenite.</p>
@@ -89,11 +89,11 @@
           <div class="story-character-wrap"> 
             <div class="story-character-content">
               <div class="story-character-image">
-                <img src="Media/Main/Story/argarion-lair.png">
+                <img src="/Media/Main/Story/argarion-lair.png">
               </div>
               <div class="story-character-info">
                 <div class="story-character-content-wrap">
-                  <img class="story-character-icon" src="Media/Main/Story/argarion-icon.png">
+                  <img class="story-character-icon" src="/Media/Main/Story/argarion-icon.png">
                   <p class="story-character-title">ARGARION</p>
                   <p class="story-character-text">Little is documented about an entity known as Argarion. Akin to a mythical tale, some believe he was once a renowned robotics engineer who managed to resurrect his decaying body by fusing it with the most advanced cyberwear.</p>
                   <p class="story-character-text">Rumour has it that a new cult recently emerged, devoted to an obscure figure who “rose from the void”.</p>
@@ -114,7 +114,7 @@
                 <p class="nav-title">CORE CHARACTERS</p>
                 <div class="button-nav">
                   <button v-for="character in characters" @click="selectCharacter(character)" :class="{ active: character === selectedCharacter }">
-                    <img v-if="character === selectedCharacter" src="Design\Asset 4.png" alt="active icon" class="active-icon">
+                    <img v-if="character === selectedCharacter" src="/Design/Asset 4.png" alt="active icon" class="active-icon">
                     {{ character.name }}
                   </button>
                 </div>
@@ -139,7 +139,7 @@
 
     </main>
     <footer>
-      <img class="footer-logo" src="Media/Design Elements/NE-logo-mini-b-w-border.png">
+      <img class="footer-logo" src="/Media/Design Elements/NE-logo-mini-b-w-border.png">
       <p>New Eden Labs [2023]</p>
     </footer>
 
