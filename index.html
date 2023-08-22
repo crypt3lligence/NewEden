@@ -124,22 +124,16 @@
       window.onload = function() {
           window.scrollTo(0, 0);
 
-          const mainElement = document.querySelector("main");
-          if (mainElement) {
-              mainElement.classList.remove("hidden");
-          }
-      };
-
-      window.addEventListener("load", function() {
-        const footerElement = document.querySelector('footer');
-        const mainElement = document.querySelector('main');
-
-        if (footerElement) {
-          footerElement.classList.add('loaded');
-        }
+      document.addEventListener("DOMContentLoaded", function() {
+        const mainElement = document.querySelector("main");
+        const footerElement = document.querySelector("footer");
 
         if (mainElement) {
-          mainElement.classList.add('loaded');
+            mainElement.classList.add("loaded");
+        }
+
+        if (footerElement) {
+            footerElement.classList.add("loaded");
         }
       });
     </script>
