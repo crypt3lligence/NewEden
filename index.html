@@ -137,6 +137,14 @@
             footerElement.classList.add("loaded");
         }
       });
+
+      window.addEventListener("load", function() {
+        const carouselElement = document.querySelector('.carousel-wrapper');
+
+        if (carouselElement) {
+            carouselElement.classList.add('loaded');
+        }
+      });
     </script>
 
     <script>      
