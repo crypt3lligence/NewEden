@@ -6,6 +6,15 @@
   display: none;
 }
 
+.carousel-wrapper {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel-wrapper.loaded {
+  opacity: 1;
+}
+
 
 @font-face {
   font-family: 'NEevangelion';
