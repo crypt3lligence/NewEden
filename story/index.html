@@ -47,8 +47,8 @@
           <div class="story-main-wrap"> 
             <div class="story-main-content">
               <div class="story-main-image">
-                <img class="story-main-image-dt" src="/Media/Main/Story/new-eden-city-concept.png">
-                <img class="story-main-image-mb" src="/Media/Main/Story/ne-concept-mob.jpg">
+                <img loading="eager" class="story-main-image-dt" src="/Media/Main/Story/new-eden-city-concept.png">
+                <img loading="eager" class="story-main-image-mb" src="/Media/Main/Story/ne-concept-mob.jpg">
               </div>
               <div class="story-main-info">
                 <p class="story-page-title">STORY ///</p>
@@ -69,11 +69,11 @@
           <div class="story-character-wrap"> 
             <div class="story-character-content">
               <div class="story-character-image">
-                <img src="/Media/Main/Story/celine-ne-street.png">
+                <img loading="lazy" src="/Media/Main/Story/celine-ne-street.png">
               </div>
               <div class="story-character-info">
                 <div class="story-character-content-wrap">
-                  <img class="story-character-icon" src="/Media/Main/Slider-Icons/msurfer-slider-icon.png">
+                  <img loading="lazy" class="story-character-icon" src="/Media/Main/Slider-Icons/msurfer-slider-icon.png">
                   <p class="story-character-title">CELINE</p>
                   <p class="story-character-text">A.k.a “code: 0xymoron” (in the more hidden corners of the Cyberverse), Celine is a Metasurfer – a class of augmented humans known for their advanced abilities in integrating and traversing the virtual systems.</p>
                   <p class="story-character-text">Frequently diving into the depths of the Cyberverse void, she’s an adept hacker and a street-smart Edenite.</p>
@@ -89,11 +89,11 @@
           <div class="story-character-wrap"> 
             <div class="story-character-content">
               <div class="story-character-image">
-                <img src="/Media/Main/Story/argarion-lair.png">
+                <img loading="lazy" src="/Media/Main/Story/argarion-lair.png">
               </div>
               <div class="story-character-info">
                 <div class="story-character-content-wrap">
-                  <img class="story-character-icon" src="/Media/Main/Story/argarion-icon.png">
+                  <img loading="lazy" class="story-character-icon" src="/Media/Main/Story/argarion-icon.png">
                   <p class="story-character-title">ARGARION</p>
                   <p class="story-character-text">Little is documented about an entity known as Argarion. Akin to a mythical tale, some believe he was once a renowned robotics engineer who managed to resurrect his decaying body by fusing it with the most advanced cyberwear.</p>
                   <p class="story-character-text">Rumour has it that a new cult recently emerged, devoted to an obscure figure who “rose from the void”.</p>
@@ -122,7 +122,7 @@
               <div class="middle-section">
                 <div v-if="selectedCharacter" class="background" :style="{ backgroundImage: `url(${selectedCharacter.backImage})` }"></div>
                 <transition v-if="selectedCharacter" name="slide-fade">
-                  <img class="main-character" :src="selectedCharacter.characterImage" :key="selectedCharacter.characterImage" alt="character image">
+                  <img class="main-character" :src="selectedCharacter.characterImage" :key="selectedCharacter.characterImage" alt="character image" loading="lazy">
                 </transition>
               </div>
               <div v-if="selectedCharacter" class="right-section"> 
