@@ -391,7 +391,7 @@ main {
 }
 
 .about-content .about-button:visited {
-  color: inherit;  
+  color: inherit !important;  
 }
 
 
