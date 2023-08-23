@@ -390,7 +390,7 @@ main {
   outline: none;
 }
 
-.about-button:visited {
+.about-content .about-button:visited {
   color: inherit;  
 }
 
