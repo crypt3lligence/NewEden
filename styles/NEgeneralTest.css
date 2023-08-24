@@ -378,6 +378,7 @@ main {
   font-family: "NEevangelion";
   text-decoration: none;
   letter-spacing: 2px;
+  color: rgb(224, 224, 224);
   }
 
 .about-content .about-button:hover {
@@ -391,7 +392,7 @@ main {
 }
 
 .about-content .about-button:visited {
-  color: inherit !important;  
+  color: inherit;
 }
 
 
