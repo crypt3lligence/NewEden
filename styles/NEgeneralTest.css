@@ -128,6 +128,24 @@ header.scrolled::before {
   margin-left: -15px;
 }
 
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  bottom: -40px; 
+  left: 91%;
+  transform: translateX(-50%); 
+}
+
+.twitter-icon:hover .tooltip {
+  display: block;
+}
+
 .hamburger {
   display: none; 
   flex-direction: column;
