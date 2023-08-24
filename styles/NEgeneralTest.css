@@ -359,7 +359,7 @@ main {
   height: 100%;
   object-fit: contain;
   object-position: center bottom; /* img bottom positioning */
-  z-index: -2;
+  z-index: 1;
 }
 
 .about-info {
