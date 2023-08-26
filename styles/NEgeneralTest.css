@@ -253,20 +253,13 @@ main {
 }
 
 .main-page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #211f1f;
+  background-image: url(../Media/Main/Images/NE-main.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; 
   position: relative;
-}
-
-.main-desktop-image {
-  position: relative;
-  width: 100%;
-}
-
-.main-mobile-image {
-  display: none;
+  height: 100vh;
+  min-height: 660px;
 }
 
 .main-video {
@@ -409,8 +402,8 @@ main {
   outline: none;
 }
 
-.about-content .about-button:visited {
-  color: inherit;
+.about-button:visited {
+  color: inherit;  
 }
 
 
@@ -594,14 +587,13 @@ footer.loaded, main.loaded {
     display: none;
   }
 
-  .main-mobile-image {
+  .main-page-container {
+    background-image: url(../Media/Main/Images/NE-main-v2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; 
     position: relative;
-    display: block;
-    width: 100%;
-  }
-
-  .main-desktop-image {
-    display: none;
+    height: 85vh;
   }
 
   .main-video {
