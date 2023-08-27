@@ -713,9 +713,8 @@ footer.loaded, main.loaded {
 }
 
 .story-page-title {
-  font-size: calc(28px + 6*(100vw - 970px)/762);
-  font-family: "NENeueMachina-PlainUBold";
-  border-bottom: 1px solid #cbcbcb;
+  font-size: calc(45px + 25*(100vw - 970px)/762);
+  font-family: "NEevangelion";
   margin: 0px;
   position: absolute;
   top: 0;
@@ -978,8 +977,8 @@ button.active {
   }
   
   .story-page-title {
-    font-size: calc(28px + 6*(100vw - 970px)/762);
-    font-family: "NENeueMachina-PlainUBold";
+    font-size: calc(38px + 6*(100vw - 970px)/762);
+    font-family: "NEevangelion";
     border-bottom: none;
     margin: 0px;
     position: absolute;
@@ -989,7 +988,7 @@ button.active {
   
   .story-main-title {
     font-size: calc(25px + 6*(100vw - 970px)/762);
-  
+    margin-top: 25px;
   }
   
   .story-main-text {
