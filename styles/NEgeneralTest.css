@@ -1173,7 +1173,7 @@ button.active {
   }
   
   .story-page-title {
-    font-size: calc(28px + 6*(100vw - 970px)/762);
+    font-size: calc(40px + 6*(100vw - 970px)/762);
     font-family: "NEevangelion";
     border-bottom: none;
     margin: 0px;
