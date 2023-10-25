@@ -20,6 +20,7 @@
       gtag('config', 'G-HGFJKJ1M5V');
     </script>
     <link rel="stylesheet" href="/styles/NEheroes.css">
+    <link rel="stylesheet" href="/styles/NEheroes-builder-insert.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/Media/Design Elements/NE-apple-touch-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/Media/Design Elements/NE-favicon-32x32.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -62,11 +63,11 @@
         <img class="menu-icon" src="/Media/Design Elements/NE-logo-class.png" alt="Mini Logo">
       </div>
     </header>
-    <div id="hero-bg-container">
+    <main>
+      <div id="hero-bg-container">
       <video id="hero-bgvid" muted loop autoplay playsinline>
           <source src="/Media/Video/NE-main-blurvid.mp4" type="video/mp4">
       </video>
-    <main>
       </div>
       <div class="hero-container">
         <p class="hero-track-title">HEROES OF NEW EDEN</p>
@@ -115,6 +116,160 @@
           <img class="hero-track-icon" src="/Design/Asset 4.png">
         </div>
       </div>  
+
+    <div class="hero-customiser-container">
+        <div class="character-section">
+          <img src="/Media/Character-Creator/Traits/1Base-Body/body.png" class="main-image type"> 
+          <img src="/Media/Character-Creator/Traits/2Clothing//metasurf.png" class="main-image clothing"> 
+          <img src="/Media/Character-Creator/Traits/3Head/head-1.png" class="main-image base"> 
+          <img src="/Media/Character-Creator/Traits/4Face/face-standard.png" class="main-image face"> 
+          <img src="/Media/Character-Creator/Traits/6Hair/hair.png" class="main-image hair"> 
+          <img src="/Media/Character-Creator/Traits/5Headgear/cyber-vamp.png" class="main-image headgear">
+          <img src="/Media/Character-Creator/Traits/7Hand/titanix.png" class="main-image hand">  
+          <img src="/Media/Character-Creator/Traits/xDesign/design-layer.png" class="main-image designlayer">  
+        </div>
+  
+        <div class="description-section">
+          <h1 class="hero-customiser-class">METASURFER</h1>
+          <div class="mobile-tabs">
+            <div class="tab" id="customizer-tab">CUSTOMIZER</div>
+            <div class="tab" id="info-tab">INFO</div>
+          </div>
+
+          <div class="tab-content" id="info-content">
+            <p class="hero-customiser-descript">Metasurfers are not just your average Edenites. They love all the latest tech, and have some of the most notorious cyberverse hackers in their ranks.</p>
+          </div>
+          <div class="tab-content" id="customizer-content">
+            <p class="hero-customiser-descript">Metasurfers are not just your average Edenites. They love all the latest tech, and have some of the most notorious cyberverse hackers in their ranks.</p>  
+            <p class="hero-customiser-explainer">Explore a selection of customizable traits below.</p>  
+            
+            <div id="menuContainer">
+              <div id="menuButton" class="open">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+              </div>
+            </div>
+
+            <div class="attributes-grid">
+
+              <div class="attribute-box inactive" data-attribute="type">
+                  <p class="attribute-type">TYPE :</p>
+                  <p class="attribute-value">HUMAN</p>
+              </div>
+              <div class="attribute-box inactive" data-attribute="base">
+                  <p class="attribute-type">BASE :</p>
+                  <p class="attribute-value">ENHANCED 2.0</p>
+              </div>
+              <div class="attribute-box inactive" data-attribute="face">
+                  <p class="attribute-type">FACE :</p>
+                  <p class="attribute-value">NEUTRAL</p>
+              </div>
+              <div class="attribute-box modifier active" data-attribute="clothing">
+                  <p class="attribute-type">CLOTHING :</p>
+                  <p class="attribute-value">METASURF</p>
+              </div>
+              <div class="attribute-box modifier" data-attribute="hair">
+                  <p class="attribute-type">HAIR :</p>
+                  <p class="attribute-value">SLICK</p>
+              </div>
+              <div class="attribute-box modifier" data-attribute="hand">
+                  <p class="attribute-type">HAND :</p>
+                  <p class="attribute-value">TITANIX</p>
+              </div>
+              <div class="attribute-box modifier" data-attribute="headgear">
+                  <p class="attribute-type">HEADGEAR :</p>
+                  <p class="attribute-value">CYBER VAMP</p>
+              </div>
+            </div>
+          
+
+            <div class="traits-selection active" data-attribute="clothing">
+              <div class="trait-thumb" data-trait="biogen" data-trait-img="/Media/Character-Creator/Traits/2Clothing/biogen.png">
+                  <img src="/Media/Character-Creator/Traits/2Clothing-mini/biogen-mini.png">
+                  <div class="thumb-title">BIOGEN</div>
+              </div>
+              <div class="trait-thumb" data-trait="city-drip" data-trait-img="/Media/Character-Creator/Traits/2Clothing/city-drip.png">
+                  <img src="/Media/Character-Creator/Traits/2Clothing-mini/city-drip-mini.png">
+                  <div class="thumb-title">CITY DRIP</div>
+              </div>
+              <div class="trait-thumb" data-trait="degenesis" data-trait-img="/Media/Character-Creator/Traits/2Clothing/degenesis.png">
+                  <img src="/Media/Character-Creator/Traits/2Clothing-mini/degenesis-mini.png">
+                  <div class="thumb-title">DEGENESIS</div>
+              </div>
+              <div class="trait-thumb" data-trait="gen-d" data-trait-img="/Media/Character-Creator/Traits/2Clothing/gen-d.png">
+                  <img src="/Media/Character-Creator/Traits/2Clothing-mini/gen-d-mini.png">
+                  <div class="thumb-title">GEN-D</div>
+              </div>
+              <div class="trait-thumb" data-trait="metasurf" data-trait-img="/Media/Character-Creator/Traits/2Clothing/metasurf.png">
+                  <img src="/Media/Character-Creator/Traits/2Clothing-mini/metasurf-mini.png">
+                  <div class="thumb-title">METASURF</div>
+              </div>
+              <div class="trait-thumb" data-trait="normie" data-trait-img="/Media/Character-Creator/Traits/2Clothing/normie.png">
+                  <img src="/Media/Character-Creator/Traits/2Clothing-mini/normie-mini.png">
+                  <div class="thumb-title">NORMIE</div>
+              </div>
+            </div>
+
+            <div class="traits-selection" data-attribute="headgear">
+              <div class="trait-thumb" data-trait="cyber-vamp" data-trait-img="/Media/Character-Creator/Traits/5Headgear/cyber-vamp.png">
+                  <img src="/Media/Character-Creator/Traits/5Headgear-mini/cyber-vamp-mini.png">
+                  <div class="thumb-title">CYBER VAMP</div>
+              </div>
+              <div class="trait-thumb" data-trait="hopium" data-trait-img="/Media/Character-Creator/Traits/5Headgear/hopium-mask.png">
+                  <img src="/Media/Character-Creator/Traits/5Headgear-mini/hopium-mask-mini.png">
+                  <div class="thumb-title">HOPIUM</div>
+              </div>
+              <div class="trait-thumb" data-trait="hexglass" data-trait-img="/Media/Character-Creator/Traits/5Headgear/hexglass.png">
+                <img src="/Media/Character-Creator/Traits/5Headgear-mini/hexglass-mini.png">
+                <div class="thumb-title">HOPIUM</div>
+              </div>
+              <div class="trait-thumb" data-trait="mask-tactical" data-trait-img="/Media/Character-Creator/Traits/5Headgear/mask-tactical.png">
+                  <img src="/Media/Character-Creator/Traits/5Headgear-mini/mask-tactical-mini.png">
+                  <div class="thumb-title">TACTICAL MASK</div>
+              </div>
+              <div class="trait-thumb" data-trait="null-trait" data-trait-img="/Media/Character-Creator/Traits/xDesign/null-trait.png">
+                  <img src="/Media/Character-Creator/Traits/xDesign/null-trait-mini.png">
+                  <div class="thumb-title">NONE</div>
+              </div>
+            </div>
+
+            <div class="traits-selection" data-attribute="hair">
+              <div class="trait-thumb" data-trait="slick" data-trait-img="/Media/Character-Creator/Traits/6Hair/hair.png">
+                  <img src="/Media/Character-Creator/Traits/6Hair-mini/slick-mini.png">
+                  <div class="thumb-title">SLICK</div>
+              </div>
+              <div class="trait-thumb" data-trait="buns" data-trait-img="/Media/Character-Creator/Traits/6Hair/buns-hair.png">
+                  <img src="/Media/Character-Creator/Traits/6Hair-mini/buns-hair-mini.png">
+                  <div class="thumb-title">BUNS</div>
+              </div>
+              <div class="trait-thumb" data-trait="smooth" data-trait-img="/Media/Character-Creator/Traits/6Hair/smooth-hair.png">
+                  <img src="/Media/Character-Creator/Traits/6Hair-mini/smooth-hair-mini.png">
+                  <div class="thumb-title">SMOOTH</div>
+              </div>
+              <div class="trait-thumb" data-trait="null-trait" data-trait-img="/Media/Character-Creator/Traits/xDesign/null-trait.png">
+                  <img src="/Media/Character-Creator/Traits/xDesign/null-trait-mini.png">
+                  <div class="thumb-title">NONE</div>
+              </div>
+            </div>
+
+            <div class="traits-selection" data-attribute="hand">
+              <div class="trait-thumb" data-trait="titanix" data-trait-img="/Media/Character-Creator/Traits/7Hand/titanix.png">
+                  <img src="/Media/Character-Creator/Traits/7Hand-mini/titanix-mini.png">
+                  <div class="thumb-title">TITANIX</div>
+              </div>
+              <div class="trait-thumb" data-trait="gamejoyoor" data-trait-img="/Media/Character-Creator/Traits/7Hand/gamejoyoor.png">
+                  <img src="/Media/Character-Creator/Traits//7Hand-mini/gamejoyoor-mini.png">
+                  <div class="thumb-title">GAMEJOYOOR</div>
+              </div>
+              <div class="trait-thumb" data-trait="rezolver" data-trait-img="/Media/Character-Creator/Traits/7Hand/rezolver.png">
+                  <img src="/Media/Character-Creator/Traits/7Hand-mini/rezolver-mini.png">
+                  <div class="thumb-title">REZOLVER</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </main>
     <footer>
@@ -256,6 +411,130 @@ setTimeout(() => {
 
 
 </script>
+
+<script>
+
+  // Select all tabs and listen for a click event
+  document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+          // Remove the active class from all tabs
+          document.querySelectorAll('.tab').forEach(item => {
+              item.classList.remove('active');
+          });
+  
+          // Add the active class to the clicked tab
+          this.classList.add('active');
+  
+          // Handling the display of contents based on the clicked tab
+          if (this.id === 'customizer-tab') {
+              document.getElementById('customizer-content').style.display = 'block';
+              document.getElementById('info-content').style.display = 'none';
+              
+              // Hiding the description in the customizer content
+              document.querySelectorAll('#customizer-content .hero-customiser-descript').forEach(descript => {
+                  descript.style.display = 'none';
+              });
+          } else if (this.id === 'info-tab') {
+              document.getElementById('customizer-content').style.display = 'none';
+              document.getElementById('info-content').style.display = 'block';
+              
+              // Showing the description in the info content
+              document.querySelectorAll('#info-content .hero-customiser-descript').forEach(descript => {
+                  descript.style.display = 'block';
+              });
+          }
+      });
+  });
+  
+  // Making the customizer tab active by default on page load
+  document.getElementById('customizer-tab').click();
+  
+  
+  document.getElementById('menuButton').addEventListener('click', function() {
+      const attributeGrid = document.querySelector('.attributes-grid');
+      const traitSelections = document.querySelectorAll('.traits-selection');
+      
+      this.classList.toggle('open');
+      
+      if(window.innerWidth <= 768) {
+          if (this.classList.contains('open')) {
+              attributeGrid.style.display = 'none';
+              traitSelections.forEach(ts => {
+                  if(ts.classList.contains('active')) {
+                      ts.style.display = 'grid';
+                  }
+              });
+          } else {
+              attributeGrid.style.display = 'grid';
+              traitSelections.forEach(ts => ts.style.display = 'none');
+          }
+      }
+  });
+  
+  document.querySelectorAll('.attribute-box.modifier').forEach(box => {
+      box.addEventListener('click', function() {
+          const attribute = this.dataset.attribute;
+  
+          document.querySelectorAll('.attribute-box.modifier').forEach(box => box.classList.remove('active'));
+          this.classList.add('active');
+  
+          document.querySelectorAll('.traits-selection').forEach(ts => ts.classList.remove('active'));
+          const traitSelection = document.querySelector(`.traits-selection[data-attribute="${attribute}"]`);
+          
+          if(window.innerWidth <= 768) {
+              if (traitSelection) {
+                  traitSelection.classList.add('active');
+                  document.querySelector('.attributes-grid').style.display = 'none';
+                  traitSelection.style.display = 'grid';
+                  document.getElementById('menuButton').classList.add('open');
+              }
+          } else {
+              if (traitSelection) {
+                  traitSelection.classList.add('active');
+              }
+          }
+      });
+  });
+  
+  
+  document.querySelectorAll('.trait-thumb').forEach(thumb => {
+      thumb.addEventListener('click', function() {
+          const traitSelection = this.closest('.traits-selection');
+          
+          if (traitSelection && !this.classList.contains('active')) {
+              traitSelection.querySelectorAll('.trait-thumb').forEach(t => t.classList.remove('active'));
+              this.classList.add('active');
+              
+              const attribute = traitSelection.dataset.attribute;
+              const traitImgPath = this.dataset.traitImg;
+              const traitValue = this.querySelector('.thumb-title').textContent;
+  
+              const mainImage = document.querySelector(`.character-section .${attribute}`);
+              const attributeValue = document.querySelector(`.attribute-box[data-attribute="${attribute}"] .attribute-value`);
+  
+              if (mainImage && attributeValue) {
+                  mainImage.style.transition = 'transform 0s'; // No transition initially
+                  mainImage.style.transform = 'translate(-50%, -50%) scale(1.03)'; // Initial zoom
+                  
+                  setTimeout(() => {
+                      mainImage.src = traitImgPath; // Update the image source
+                      mainImage.style.transition = 'transform 0.4s'; // Apply transition
+                      mainImage.style.transform = 'translate(-50%, -50%) scale(1)'; // Zoom effect to normal size
+                  }, 0);
+                  
+                  attributeValue.textContent = traitValue;
+                  attributeValue.classList.add('flash-effect'); // Add flash effect
+                  
+                  // Remove flash effect after animation duration
+                  setTimeout(() => {
+                      attributeValue.classList.remove('flash-effect');
+                  }, 700); // Same as animation duration
+              }
+            }
+        });
+      });
+  
+  </script>
 
 <script>      
   if ('scrollRestoration' in history) {
